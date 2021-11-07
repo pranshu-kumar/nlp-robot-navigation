@@ -109,7 +109,7 @@ def get_possible_behaviours(behavioural_map, current_node):
     current_node - string
     Returns array of one hot encoded vectors of the possible behaviors
     '''
-    behaviors = ['oor', 'ool', 'iol', 'ior', 'oio', 'cf', 'chs', 'lt', 'rt', 'sp', 'chr', 'chl']
+    behaviors = ['oor', 'ool', 'iol', 'ior', 'oio', 'cf', 'chs', 'lt', 'rt', 'sp', 'chr', 'chl','end']
     behavior2idx = {beh : idx for idx, beh in enumerate(behaviors)}
     
     possible_behaviors = [edge[0] for edge in behavioural_map[current_node]]
