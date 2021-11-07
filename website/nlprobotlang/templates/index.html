@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+    <h1 class="uk-text-center">Bottom-up Approach for translating Human Language to High-Level Robot Language</h1>
+    <hr>
+
+    <!-- Problem Statement -->
+    <h2 class="uk-text-center uk-text-bold">Problem Statement</h2>
+    <img src="{% static 'probstatement.svg'%}" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, enim? Quos, praesentium fugit. Dignissimos
+        neque ratione, et voluptate, totam quae quo officiis ipsa, nobis dolorem adipisci inventore quisquam aliquam
+        molestiae?</p>
+    <hr>
+
+    <!-- Problem Statement -->
+    <h2 class="uk-text-center uk-text-bold">Our Approach</h2>
+    <img src="{% static 'ourapproach2.svg'%}" alt="">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quas eum voluptatibus velit repudiandae, qui modi
+        tempora natus facere laudantium? Facere odit laudantium quasi voluptatibus dignissimos beatae quod, magni saepe.</p>
+    <!-- Abstract -->
+    <!-- <h3 class="uk-text-center">Abstract</h3> -->
+
+    <!-- <p class="uk-text-center">Advancements in technology have made it
+                possible to have more efficient human-robot
+                communication. NLP model can convert the
+                human language instructions into high-level
+                robot language; this helps us further improve
+                the quality of human-robot interaction. Earlier
+                in this domain, multiple attempts were made to
+                tackle this problem. The most prominent work
+                uses a technique of behavioral maps (which is
+                a set of all possible actions a robot can take).
+                The seq2seq model is used in this technique,
+                which learns the high-level robot navigation
+                language with the natural human language for
+                a given set of behaviors. We intend to improvise the model by learning in a bottom-up fashion where we will
+                learn chunks of the navigation or behavioural maps instead of learning
+                the whole of it in one go. This approach will
+                make it suitable for larger-sized environments
+                as, in many cases, it might be unrealistic to
+                have all the possible set of actions known from
+                the beginning.
+            </p> -->
+
+
+{% endblock %}
