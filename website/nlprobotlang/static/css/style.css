@@ -1,0 +1,27 @@
+body{
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.25em;
+}
+
+h1,h2,h3{
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.15em;
+}
+
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
+}
+
