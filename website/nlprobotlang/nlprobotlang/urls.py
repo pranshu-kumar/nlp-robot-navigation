@@ -14,11 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from nlprobotlang.views import HomeView, TeamView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomeView.as_view(), name='home'),
-    path('team/', TeamView.as_view(), name='team')
+    path('team/', TeamView.as_view(), name='team'),
+    path('translate/', include('translator.urls'))
 ]

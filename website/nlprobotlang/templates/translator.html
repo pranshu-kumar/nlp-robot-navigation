@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="uk-text-center">Translation from Natural Language Instruction to Robot Level Language</h1>
+<br>
+<form class="uk-text-center uk-textarea uk_padding" action="/robottranslate/" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Translate" class="uk-button uk-button-large uk-button-primary">
+</form>
+{% endblock %}

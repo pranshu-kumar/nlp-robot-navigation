@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 
+<div class='uk-text-center uk-padding'>
+    {% block content %}
 
-{% block content %}
     <h1 class="uk-text-center">Bottom-up Approach for translating Human Language to High-Level Robot Language</h1>
     <hr>
 
@@ -18,8 +19,10 @@
     <h2 class="uk-text-center uk-text-bold">Our Approach</h2>
     <img src="{% static 'ourapproach2.svg'%}" alt="">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quas eum voluptatibus velit repudiandae, qui modi
-        tempora natus facere laudantium? Facere odit laudantium quasi voluptatibus dignissimos beatae quod, magni saepe.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quas eum voluptatibus velit repudiandae, qui
+        modi
+        tempora natus facere laudantium? Facere odit laudantium quasi voluptatibus dignissimos beatae quod, magni saepe.
+    </p>
     <!-- Abstract -->
     <!-- <h3 class="uk-text-center">Abstract</h3> -->
 
@@ -46,4 +49,5 @@
             </p> -->
 
 
-{% endblock %}
+    {% endblock %}
+</div>

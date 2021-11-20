@@ -37,9 +37,9 @@
                     <div uk-navbar>
 
                         <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'home' %}">Home</a></li>
                             <li><a href="{% url 'team' %}">Team Members</a></li>
-                            <li><a href="#">Translator</a></li>
+                            <li><a href="{% url 'translator' %}">Translator</a></li>
                         </ul>
 
                     </div>
@@ -53,10 +53,12 @@
 
 
 
-    <div class="uk-container uk-align-center">
+    <div class="uk-container uk-padding">
         {% block content %}
         {% endblock %}
     </div>
+
+
 
 
 </body>
