@@ -1,4 +1,18 @@
-# Bottom-up Approach for translating Human Language to High-LevelRobot Language
+# Bottom-up Approach for translating Human Language to High-Level Robot Language
+
+## Table of Content
+- [Bottom-up Approach for translating Human Language to High-LevelRobot Language](#bottom-up-approach-for-translating-human-language-to-high-levelrobot-language)
+  * [Problem Statement :pencil:](#problem-statement--pencil-)
+  * [Proposed Approach :bulb:](#proposed-approach--bulb-)
+  * [Dataset :bookmark_tabs:](#dataset--bookmark-tabs-)
+    + [Challenges in the dataset](#challenges-in-the-dataset)
+    + [Modifications in the dataset](#modifications-in-the-dataset)
+  * [Website :computer:](#website--computer-)
+    + [Snapshots](#snapshots)
+  * [Accuracy :dart:](#accuracy--dart-)
+  * [References and Credits :books:](#references-and-credits--books-)
+    + [References](#references)
+    + [Contributors](#contributors)
 
 ## Problem Statement :pencil:
 
@@ -10,7 +24,7 @@ Our goal is to develop a bottom-up approach for translating English language ins
 ![](media/appraoch.png)
 
 ## Dataset :bookmark_tabs:
-We use the dataset curated by ...
+We use the dataset curated by authors of this [paper](https://aclanthology.org/D18-1286.pdf).
 
 ### Challenges in the dataset
 The notion of directions was incorporated in the dataset. Any corridor can be traversed from either of the two opposite directions. (See example below)
