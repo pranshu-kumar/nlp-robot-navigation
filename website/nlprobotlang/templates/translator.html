@@ -1,10 +1,23 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 
 <h1 class="uk-text-center">Translation from Natural Language Instruction to Robot Level Language</h1>
+
+<p>To translate the Natural Level Instruction to the Robot Level Language we would need to feed as input,
+    <ul>
+        <li><p>The Natural Level Instruction</p></li>
+        <li><p>The Behavior Map Encoding</p></li>
+    </ul>
+</p>
+
+<img class="uk-align-center" src="{% static 'images/nlptranslation.png' %}" style="width:auto;height:300px;" alt="" srcset="" uk-img>
 <br>
-<form class="uk-text-center uk-textarea uk_padding" action="/robottranslate/" method="post">
+
+<h1 class="uk-text-center">Translator</h1>
+
+
+<form class="uk-text-center uk-textarea uk_padding" action="{% url 'robottranslation' %}"  method="post">
     {% csrf_token %}
     {{form.as_p}}
     <input type="submit" value="Translate" class="uk-button uk-button-large uk-button-primary">

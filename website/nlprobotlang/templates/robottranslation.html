@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h1 class="uk-text-center">Robot Language Translation</h1>
+<br>
+<div class="uk-text-center">
+    <h2>Natural Language Instruction</h2>
+    <p>{{nl_instruction}}</p>
+    <h2>Translated Robot Language</h2>
+    <p>{{robot_lang}}</p>
+
+    <h2>Behavioral Graph Visualisation</h2>
+    {{b_map_graph_div|safe}}
+</div>
+{% endblock %}

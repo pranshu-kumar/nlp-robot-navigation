@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import translate_instruction
+from . import views
 
 urlpatterns = [
-    path('', translate_instruction, name='translator')
+    path('', views.translate_instruction, name='translator'),
+    path('robottranslation/', views.show_translation, name='robottranslation')
 ]

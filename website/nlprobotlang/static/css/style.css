@@ -17,7 +17,7 @@ h1,h2,h3{
 p{
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 1.15em;
+    /* font-size: 1.15em; */
 }
 
 @-webkit-keyframes fontfix {
